@@ -24,7 +24,7 @@ pipeline {
         }
 
         stage('stage 2') {
-           sh 'echo hello from stage2!'
+           steps { sh 'echo hello from stage2!' }
         }
 stage('manual approval') {
   steps {
